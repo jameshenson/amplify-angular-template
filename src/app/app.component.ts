@@ -54,8 +54,12 @@ Amplify.configure(outputs);
       TodosComponent, 
       AmplifyAuthenticatorModule, 
       MatSliderModule,
-    /*  MatSidenavModule,
-      BrowserAnimationsModule, 
+      MatSidenavModule,
+      MatSidenavModule,
+      MatIconModule,
+      MatListModule,
+      MatToolbarModule,
+     /* BrowserAnimationsModule, 
       MatMenuModule,
       MatButtonModule,
       MatIconModule,
@@ -68,7 +72,6 @@ Amplify.configure(outputs);
       MatPaginatorModule,
       MatProgressSpinnerModule,
       MatSelectModule,
-      MatSidenavModule,
       MatSortModule,
       MatTableModule,
       MatToolbarModule,      
@@ -89,7 +92,7 @@ Amplify.configure(outputs);
 
 export class AppComponent {
   title = 'amplify-angular-template';
-    
+  showFiller = false;  
   constructor(public authenticator: AuthenticatorService) {
     Amplify.configure(outputs);
   }
